@@ -1,0 +1,1 @@
+import ke node-red dan inject value derajat per masing nodes sendi untuk simulasi gerakan

@@ -1,0 +1,821 @@
+[
+    {
+        "id": "e71eb9ec9aa2da01",
+        "type": "tab",
+        "label": "Robot FLow (testing)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8345e4ce7926332a",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "kepalaX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kepalaX",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "3c9e826270f3967b",
+        "type": "join",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1290,
+        "y": 540,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "8ed8dfb8a4ee599d",
+        "type": "debug",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1510,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "cd5dd1dd50fe8677",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "kepalaY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kepalaY",
+        "payload": "",
+        "payloadType": "num",
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "c14893d7cf87dd70",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pinggangX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pinggangX",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "1704be786cd9b6ad",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganTanganKananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganTanganKananY",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "0e1d4d39dd278607",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lenganKananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lenganKananY",
+        "payload": "",
+        "payloadType": "num",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "6fd65499e2d540bc",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lenganKananX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lenganKananX",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "b560eb407728ce35",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "bahuKananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kepalaX",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "278e354a25f83b23",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "bahuKananX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bahuKananX",
+        "payload": "",
+        "payloadType": "num",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "bcbc36efaa2482c3",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pahaKananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pahaKananY",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "5c6e70e0f9157a6c",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lututKananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lututKananY",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "835745685c2d922c",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganKakikananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganKakikananY",
+        "payload": "",
+        "payloadType": "num",
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "d456e96c9310a361",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganKakikananX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganKakikananX",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "4938343c0666401f",
+        "type": "mqtt out",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "topic": "/robot/enggang",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5a4b81ea5fadc4af",
+        "x": 1520,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "103bc6086491ab09",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pinggulkananY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kepalaX",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "ae4ebc3139bb3364",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pinggulkananX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pinggulkananX",
+        "payload": "",
+        "payloadType": "num",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "bf4586fbbfc01818",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganTanganKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganTanganKiriY",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "365e358304d4a761",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lenganKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lenganKiriY",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 310,
+        "y": 680,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "67dd151acb0403d7",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lenganKiriX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lenganKiriX",
+        "payload": "444",
+        "payloadType": "num",
+        "x": 310,
+        "y": 720,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "fa50d001d5ae2c7d",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "bahuKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bahuKiriY",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 300,
+        "y": 760,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "37b5f8ee539ffcc3",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "bahuKiriX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bahuKiriX",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 300,
+        "y": 800,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "f0ee1c366e4fcb07",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pahaKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pahaKiriY",
+        "payload": "",
+        "payloadType": "num",
+        "x": 300,
+        "y": 840,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "bd969ffbfbfa7b86",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "lututKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "lututKiriY",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 300,
+        "y": 880,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "71f98e0bf894e796",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganKakiKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganKakiKiriY",
+        "payload": "444",
+        "payloadType": "num",
+        "x": 340,
+        "y": 920,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "3f9f8d90fbd8818b",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pergelanganKakiKiriX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pergelanganKakiKiriX",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 340,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f6b65566b72cb3b",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pinggulKiriY",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pinggulKiriY",
+        "payload": "444",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1000,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "6482fb19aaa93bb2",
+        "type": "inject",
+        "z": "e71eb9ec9aa2da01",
+        "name": "pinggulKiriX",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pinggulKiriX",
+        "payload": "999",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1040,
+        "wires": [
+            [
+                "3c9e826270f3967b"
+            ]
+        ]
+    },
+    {
+        "id": "5a4b81ea5fadc4af",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.100",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

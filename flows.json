@@ -8,64 +8,6 @@
         "env": []
     },
     {
-        "id": "8345e4ce7926332a",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "kepalaX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "kepalaX",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 300,
-        "y": 80,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "3c9e826270f3967b",
-        "type": "join",
-        "z": "e71eb9ec9aa2da01",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "1",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1290,
-        "y": 540,
-        "wires": [
-            [
-                "4938343c0666401f",
-                "8ed8dfb8a4ee599d"
-            ]
-        ]
-    },
-    {
         "id": "8ed8dfb8a4ee599d",
         "type": "debug",
         "z": "e71eb9ec9aa2da01",
@@ -75,328 +17,9 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 1510,
-        "y": 580,
+        "x": 2370,
+        "y": 820,
         "wires": []
-    },
-    {
-        "id": "cd5dd1dd50fe8677",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "kepalaY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "kepalaY",
-        "payload": "",
-        "payloadType": "num",
-        "x": 300,
-        "y": 120,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "c14893d7cf87dd70",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pinggangX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pinggangX",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 300,
-        "y": 160,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "1704be786cd9b6ad",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganTanganKananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganTanganKananY",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 360,
-        "y": 200,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "0e1d4d39dd278607",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "lenganKananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lenganKananY",
-        "payload": "",
-        "payloadType": "num",
-        "x": 320,
-        "y": 240,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "6fd65499e2d540bc",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "lenganKananX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lenganKananX",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 320,
-        "y": 280,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "b560eb407728ce35",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "bahuKananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "kepalaX",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 310,
-        "y": 320,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "278e354a25f83b23",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "bahuKananX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "bahuKananX",
-        "payload": "",
-        "payloadType": "num",
-        "x": 310,
-        "y": 360,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "bcbc36efaa2482c3",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pahaKananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pahaKananY",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 310,
-        "y": 400,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "5c6e70e0f9157a6c",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "lututKananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lututKananY",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 310,
-        "y": 440,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "835745685c2d922c",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganKakikananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganKakikananY",
-        "payload": "",
-        "payloadType": "num",
-        "x": 350,
-        "y": 480,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "d456e96c9310a361",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganKakikananX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganKakikananX",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 350,
-        "y": 520,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
     },
     {
         "id": "4938343c0666401f",
@@ -412,382 +35,1182 @@
         "correl": "",
         "expiry": "",
         "broker": "5a4b81ea5fadc4af",
-        "x": 1520,
-        "y": 520,
+        "x": 2380,
+        "y": 880,
         "wires": []
     },
     {
-        "id": "103bc6086491ab09",
-        "type": "inject",
+        "id": "26f2cda7b05a463b",
+        "type": "function",
         "z": "e71eb9ec9aa2da01",
-        "name": "pinggulkananY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "kepalaX",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 320,
-        "y": 560,
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"2\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 40,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
             ]
         ]
     },
     {
-        "id": "ae4ebc3139bb3364",
-        "type": "inject",
+        "id": "6d795af98f97ece1",
+        "type": "function",
         "z": "e71eb9ec9aa2da01",
-        "name": "pinggulkananX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pinggulkananX",
-        "payload": "",
-        "payloadType": "num",
-        "x": 320,
-        "y": 600,
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"3\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 100,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
             ]
         ]
     },
     {
-        "id": "bf4586fbbfc01818",
-        "type": "inject",
+        "id": "372fcba929b79b9b",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganTanganKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganTanganKiriY",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 350,
+        "name": "",
+        "label": "kepalaX",
+        "tooltip": "",
+        "group": "a0dfdbb0c9c23676",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 40,
+        "wires": [
+            [
+                "26f2cda7b05a463b"
+            ]
+        ]
+    },
+    {
+        "id": "277730b9b0be3470",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "kepalaX",
+        "tooltip": "",
+        "group": "a0dfdbb0c9c23676",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 100,
+        "wires": [
+            [
+                "6d795af98f97ece1"
+            ]
+        ]
+    },
+    {
+        "id": "2d0a59ea2969ced4",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"4\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 160,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "e25e21a686389d2b",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pinggangX",
+        "tooltip": "",
+        "group": "a0dfdbb0c9c23676",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 160,
+        "wires": [
+            [
+                "2d0a59ea2969ced4"
+            ]
+        ]
+    },
+    {
+        "id": "f52140cf24e879d7",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"5\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 220,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "5892b2af43d00be5",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pergelanganTanganKananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1580,
+        "y": 220,
+        "wires": [
+            [
+                "f52140cf24e879d7"
+            ]
+        ]
+    },
+    {
+        "id": "b400aefd295a85c4",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"6\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 280,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "383ed79dd4484ab0",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"7\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 340,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "269906fdf98c0f79",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "lenganKananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1540,
+        "y": 280,
+        "wires": [
+            [
+                "b400aefd295a85c4"
+            ]
+        ]
+    },
+    {
+        "id": "42c55bbff838e0fe",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "lenganKananX",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1540,
+        "y": 340,
+        "wires": [
+            [
+                "383ed79dd4484ab0"
+            ]
+        ]
+    },
+    {
+        "id": "df445958977f431a",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"8\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 400,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "50d61c44b239662d",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "bahuKananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 400,
+        "wires": [
+            [
+                "df445958977f431a"
+            ]
+        ]
+    },
+    {
+        "id": "bf384483a621fdca",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "bahuKananX",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 460,
+        "wires": [
+            [
+                "d685a96e146b8f97"
+            ]
+        ]
+    },
+    {
+        "id": "4e732b38f01a5029",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pahaKananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 520,
+        "wires": [
+            [
+                "cb5e99c89077e7ad"
+            ]
+        ]
+    },
+    {
+        "id": "7a56da44249e64f5",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "lututKananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 580,
+        "wires": [
+            [
+                "afa9721000ad6c24"
+            ]
+        ]
+    },
+    {
+        "id": "19dcc108decefc4b",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pergelanganKakikananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1570,
         "y": 640,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "079e111560ffbeb7"
             ]
         ]
     },
     {
-        "id": "365e358304d4a761",
-        "type": "inject",
+        "id": "8da733a1f4073296",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "lenganKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lenganKiriY",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 310,
-        "y": 680,
+        "name": "",
+        "label": "pergelanganKakikananX",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1570,
+        "y": 700,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "f3e4e2c1ec6eca84"
             ]
         ]
     },
     {
-        "id": "67dd151acb0403d7",
-        "type": "inject",
+        "id": "24b708fcb39ef14c",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "lenganKiriX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lenganKiriX",
-        "payload": "444",
-        "payloadType": "num",
-        "x": 310,
-        "y": 720,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "fa50d001d5ae2c7d",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "bahuKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "bahuKiriY",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 300,
+        "name": "",
+        "label": "pinggulkananY",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1540,
         "y": 760,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "146252aa8a1ebbd4"
             ]
         ]
     },
     {
-        "id": "37b5f8ee539ffcc3",
-        "type": "inject",
+        "id": "207c83cc58c3ee3f",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "bahuKiriX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "bahuKiriX",
-        "payload": "10",
-        "payloadType": "num",
-        "x": 300,
-        "y": 800,
+        "name": "",
+        "label": "pinggulkananX",
+        "tooltip": "",
+        "group": "83fd5541d307a21e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1540,
+        "y": 820,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "6efe4d9557b3c3a8"
             ]
         ]
     },
     {
-        "id": "f0ee1c366e4fcb07",
-        "type": "inject",
+        "id": "f6e53b16cd3f0345",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "pahaKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pahaKiriY",
-        "payload": "",
-        "payloadType": "num",
-        "x": 300,
-        "y": 840,
-        "wires": [
-            [
-                "3c9e826270f3967b"
-            ]
-        ]
-    },
-    {
-        "id": "bd969ffbfbfa7b86",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "lututKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "lututKiriY",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 300,
+        "name": "",
+        "label": "pergelanganTanganKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1570,
         "y": 880,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "d412be60fc9595e6"
             ]
         ]
     },
     {
-        "id": "71f98e0bf894e796",
-        "type": "inject",
+        "id": "a6311ee0214d3bf4",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganKakiKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganKakiKiriY",
-        "payload": "444",
-        "payloadType": "num",
-        "x": 340,
-        "y": 920,
+        "name": "",
+        "label": "lenganKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 940,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "955f3848d95f1800"
             ]
         ]
     },
     {
-        "id": "3f9f8d90fbd8818b",
-        "type": "inject",
+        "id": "f709b4837ac16ad6",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "pergelanganKakiKiriX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pergelanganKakiKiriX",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 340,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4f6b65566b72cb3b",
-        "type": "inject",
-        "z": "e71eb9ec9aa2da01",
-        "name": "pinggulKiriY",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pinggulKiriY",
-        "payload": "444",
-        "payloadType": "num",
-        "x": 310,
+        "name": "",
+        "label": "lenganKiriX",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
         "y": 1000,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "d771f0c9d3057178"
             ]
         ]
     },
     {
-        "id": "6482fb19aaa93bb2",
-        "type": "inject",
+        "id": "815309cffff8bbdd",
+        "type": "ui_slider",
         "z": "e71eb9ec9aa2da01",
-        "name": "pinggulKiriX",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "pinggulKiriX",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 310,
-        "y": 1040,
+        "name": "",
+        "label": "bahuKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 1060,
         "wires": [
             [
-                "3c9e826270f3967b"
+                "7d1f0ee6926d8402"
+            ]
+        ]
+    },
+    {
+        "id": "23aa7837e4fc42b4",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "bahuKiriX",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 1120,
+        "wires": [
+            [
+                "1778d368f91e9486"
+            ]
+        ]
+    },
+    {
+        "id": "5a8cb5f799af47a6",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pahaKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 1180,
+        "wires": [
+            [
+                "1d9ce13bf20c0a94"
+            ]
+        ]
+    },
+    {
+        "id": "f0147c7c93ae9c99",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "lututKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1520,
+        "y": 1240,
+        "wires": [
+            [
+                "e0182986a59864c4"
+            ]
+        ]
+    },
+    {
+        "id": "65a6473538f3989c",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pergelanganKakiKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1560,
+        "y": 1300,
+        "wires": [
+            [
+                "c8a962e793ecb046"
+            ]
+        ]
+    },
+    {
+        "id": "76cd591f29dc8f58",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pergelanganKakiKiriX",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1560,
+        "y": 1360,
+        "wires": [
+            [
+                "ae0655dba32b1165"
+            ]
+        ]
+    },
+    {
+        "id": "f507050b224a490b",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pinggulKiriY",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 1420,
+        "wires": [
+            [
+                "3369e74289deb687"
+            ]
+        ]
+    },
+    {
+        "id": "16bed7479bb1cca6",
+        "type": "ui_slider",
+        "z": "e71eb9ec9aa2da01",
+        "name": "",
+        "label": "pinggulKiriX",
+        "tooltip": "",
+        "group": "10b66fbadc71a312",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "180",
+        "step": "10",
+        "className": "",
+        "x": 1530,
+        "y": 1480,
+        "wires": [
+            [
+                "adbcf8acfaac099d"
+            ]
+        ]
+    },
+    {
+        "id": "d685a96e146b8f97",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"9\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 460,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "cb5e99c89077e7ad",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"10\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 520,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "afa9721000ad6c24",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"11\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 580,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "079e111560ffbeb7",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"12\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 640,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "f3e4e2c1ec6eca84",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"13\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 700,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "146252aa8a1ebbd4",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"14\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 760,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "6efe4d9557b3c3a8",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"15\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 820,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "d412be60fc9595e6",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"16\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 880,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "955f3848d95f1800",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"17\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 940,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "d771f0c9d3057178",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"18\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1000,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "7d1f0ee6926d8402",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"19\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1060,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "1778d368f91e9486",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"20\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1120,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "1d9ce13bf20c0a94",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"21\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1180,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "e0182986a59864c4",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"22\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1240,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "c8a962e793ecb046",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"23\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1300,
+        "wires": [
+            [
+                "8ed8dfb8a4ee599d",
+                "4938343c0666401f"
+            ]
+        ]
+    },
+    {
+        "id": "ae0655dba32b1165",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"24\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1360,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "3369e74289deb687",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"25\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1420,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
+            ]
+        ]
+    },
+    {
+        "id": "adbcf8acfaac099d",
+        "type": "function",
+        "z": "e71eb9ec9aa2da01",
+        "name": "function",
+        "func": "var number = msg.payload;\nvar string = \"26\";\nvar result = string +\":\" + number.toString();\nreturn {payload: result};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1480,
+        "wires": [
+            [
+                "4938343c0666401f",
+                "8ed8dfb8a4ee599d"
             ]
         ]
     },
@@ -817,5 +1240,46 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "a0dfdbb0c9c23676",
+        "type": "ui_group",
+        "name": "Tengah",
+        "tab": "3f01b6e25938416b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "83fd5541d307a21e",
+        "type": "ui_group",
+        "name": "Kanan",
+        "tab": "3f01b6e25938416b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "10b66fbadc71a312",
+        "type": "ui_group",
+        "name": "Kiri",
+        "tab": "3f01b6e25938416b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f01b6e25938416b",
+        "type": "ui_tab",
+        "name": "Robot",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]

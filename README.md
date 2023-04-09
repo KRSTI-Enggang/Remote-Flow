@@ -1,4 +1,4 @@
-import ke node-red dan inject value derajat per masing nodes sendi untuk simulasi gerakan
+Import ke node-red dan inject value derajat per masing nodes sendi untuk simulasi gerakan.
 Untuk mengimport flow Node-RED yang berbentuk JSON, ikuti langkah-langkah berikut:
 
 Buka Node-RED dan klik tombol hamburger di sudut kanan atas layar.
